@@ -1,4 +1,4 @@
-## bill of materials
+## Bill of materials
 <br />
 
 |volgnummer|naam                                  |omschrijving                                        |nieuw/recup             |kostprijs/stuk|aantal|subtotaal|
