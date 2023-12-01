@@ -1,34 +1,33 @@
-const int buttonPin = 2;
+#include <Arduino.h>
+#include <WiFi.h>
+
+const int buttonPin = 2;  // Replace with the actual pin where your button is connected
 volatile bool isRunning = false;
-volatile bool buttonPressed = false;
+
+void buttonInterrupt();
 
 void setup() 
 {
+  pinMode(17, OUTPUT);
   pinMode(buttonPin, INPUT_PULLUP);
-  Serial.begin(9600);
-  attachInterrupt(digitalPinToInterrupt(buttonPin), buttonInterrupt, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(buttonPin), buttonInterrupt, FALLING);
+  Serial.begin(115200);
 }
 
 void loop() 
 {
-  if (isRunning) 
+  if (isRunning)
   {
-    //Code
+    digitalWrite(17, HIGH);
+    //Serial.println("System is ON");
+  } else {
+    digitalWrite(17, LOW);
+    //Serial.println("System is OFF");
   }
 }
 
 void buttonInterrupt() 
 {
-  if (!buttonPressed) 
-  {
-    delay(50); //Debounce
-    buttonPressed = true;
-    
-    if (digitalRead(buttonPin) == LOW) 
-    {
-      isRunning = !isRunning;
-      if (isRunning) {Serial.println("System started.");}
-      else {Serial.println("System stopped.");}
-  	}
-  } else {buttonPressed = false;}
+  delay(50); //Debounce
+  isRunning = !isRunning;
 }
