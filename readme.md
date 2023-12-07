@@ -23,7 +23,9 @@ distance sensor - motors: Plan A:
                           Plan B: 80mm
 
 weight: Plan A: 
+        
         Plan B: 364 gram
 
 speed:  Plan A: 0,462m/s
+        
         Plan B: 0,000m/s 
