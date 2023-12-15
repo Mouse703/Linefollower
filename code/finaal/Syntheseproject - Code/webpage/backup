@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Control</title>
+</head>
+<body>
+    <h1>Robot Control</h1>
+
+    <!-- Display Telnet response values here -->
+    <p><strong>Cycle Time:</strong> {{ telnet_response.cycle_time }}</p>
+    <p><strong>Calculation Time:</strong> {{ telnet_response.calculation_time }}</p>
+    <p><strong>Blacks:</strong> {{ telnet_response.blacks }}</p>
+    <p><strong>Whites:</strong> {{ telnet_response.whites }}</p>
+    <p><strong>Normalized Values:</strong> {{ telnet_response.normalized_values }}</p>
+    <p><strong>Position:</strong> {{ telnet_response.position }}</p>
+    <p><strong>Power:</strong> {{ telnet_response.power }}</p>
+    <p><strong>Diff:</strong> {{ telnet_response.diff }}</p>
+    <p><strong>Kp:</strong> {{ telnet_response.kp }}</p>
+    <p><strong>Ki:</strong> {{ telnet_response.ki }}</p>
+    <p><strong>Kd:</strong> {{ telnet_response.kd }}</p>
+
+    <!-- Your existing HTML content here -->
+
+    <!-- Your form and buttons for sending commands -->
+    <form action="/send_command" method="post">
+        <label for="command">Enter command:</label>
+        <input type="text" id="command" name="command" required>
+        <button type="submit">Send Command</button>
+    </form>
+
+</body>
+</html>

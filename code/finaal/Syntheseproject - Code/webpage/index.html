@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Following Robot Control</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        body {
+        margin: 20px;
+    }
+
+    form {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Make the text input boxes 100% of the parent width */
+		max-width: 300px;
+        padding: 8px; /* Add some padding for better aesthetics */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        margin-bottom: 10px; /* Add some bottom margin to separate elements */
+    }
+
+    button {
+        padding: 10px; /* Add padding to the buttons for better aesthetics */
+    }
+    </style>
+    <script>
+        $(document).ready(function() {
+            // Function to handle form submission
+            function submitForm(command) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/send_command',
+                    data: { command: command },
+                    success: function(data) {
+                        console.log(data);
+                        // Handle the success response if needed
+                    },
+                    error: function(error) {
+                        console.error('Error submitting form:', error);
+                    }
+                });
+            }
+
+            // Handle the form submission when the "Run" button is clicked
+            $('#run-form').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var command = $('#command_run').val();
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-cycletime').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var cycleTime = $('#cycle-time').val();
+                var command = 'set cycle ' + cycleTime;
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-power').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var power = $('#power').val();
+                var command = 'set power ' + power;
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-diff').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var diff = $('#diff').val();
+                var command = 'set diff ' + diff;
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-kp').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var kp = $('#kp').val();
+                var command = 'set kp ' + kp;
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-ki').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var ki = $('#ki').val();
+                var command = 'set ki ' + ki;
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-kd').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var kd = $('#kd').val();
+                var command = 'set kd ' + kd;
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-ledred').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var ledred = $('#ledred').val();
+                var command = 'set ledred ' + ledred;
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-ledwhite').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var ledwhite = $('#ledwhite').val();
+                var command = 'set ledwhite ' + ledwhite;
+                submitForm(command);
+            });
+
+            // Handle the form submission when the "Send Data" button is clicked
+            $('#send-data-form-ledorange').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                var ledorange = $('#ledorange').val();
+                var command = 'set ledorange ' + ledorange;
+                submitForm(command);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Line Following Robot Control</h1>
+	
+    <!-- Start/Stop robot -->
+    <form id="run-form" action="/send_command" method="post">
+		<label for="cycle-time">Set robotstate:</label>
+        <input type="hidden" id="command_run" name="command" value="run">
+        <button type="submit">Run/Stop</button>
+    </form>
+
+    <!-- Cycle Time -->
+    <form id="send-data-form-cycletime" action="/send_command" method="post">
+        <label for="cycle-time">Cycle Time:</label>
+        <input type="text" id="cycle-time" name="cycle-time" placeholder="Enter Cycle Time in microseconds">
+        <button type="submit">Send Data</button>
+    </form>
+	
+    <!-- Motor Power -->
+    <form id="send-data-form-power" action="/send_command" method="post">
+        <label for="power">Motor power:</label>
+        <input type="text" id="power" name="command" placeholder="Enter PWM value">
+        <button type="submit">Send Data</button>
+    </form>
+    
+    <!-- Motor diff -->
+    <form id="send-data-form-diff" action="/send_command" method="post">
+        <label for="diff">Motor diff:</label>
+        <input type="text" id="diff" name="command" placeholder="Enter diff value">
+        <button type="submit">Send Data</button>
+    </form>
+
+    <!-- Motor kp -->
+    <form id="send-data-form-kp" action="/send_command" method="post">
+        <label for="kp">Motor kp:</label>
+        <input type="text" id="kp" name="command" placeholder="Enter kp value">
+        <button type="submit">Send Data</button>
+    </form>
+
+    <!-- Motor ki -->
+    <form id="send-data-form-ki" action="/send_command" method="post">
+        <label for="ki">Motor ki:</label>
+        <input type="text" id="ki" name="command" placeholder="Enter ki value">
+        <button type="submit">Send Data</button>
+    </form>
+
+    <!-- Motor kd -->
+    <form id="send-data-form-kd" action="/send_command" method="post">
+        <label for="kd">Motor kd:</label>
+        <input type="text" id="kd" name="command" placeholder="Enter kd value">
+        <button type="submit">Send Data</button>
+    </form>
+
+    <!-- Motor ledred -->
+    <form id="send-data-form-ledred" action="/send_command" method="post">
+        <label for="ledred">Motor ledred:</label>
+        <input type="text" id="ledred" name="command" placeholder="Enter PWM value">
+        <button type="submit">Send Data</button>
+    </form>
+
+    <!-- Motor ledwhite -->
+    <form id="send-data-form-ledwhite" action="/send_command" method="post">
+        <label for="ledwhite">Motor ledwhite:</label>
+        <input type="text" id="ledwhite" name="command" placeholder="Enter PWM value">
+        <button type="submit">Send Data</button>
+    </form>
+
+    <!-- Motor ledorange -->
+    <form id="send-data-form-ledorange" action="/send_command" method="post">
+        <label for="ledorange">Motor ledorange:</label>
+        <input type="text" id="ledorange" name="command" placeholder="Enter PWM value">
+        <button type="submit">Send Data</button>
+    </form>
+
+
+	
+</body>
+</html>
