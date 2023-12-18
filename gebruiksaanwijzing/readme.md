@@ -1,45 +1,42 @@
 # Gebruiksaanwijzing
 
-### Opladen / vervangen batterijen
-Opladen van de batterijen gebeurd met de XTAR MC2 Plus lader. Plaats de batterijen in de houder met de correcte polariteit. De oplader kan door middel van een USB kabel verbonden worden met u PC. Wanneer de 4 blauwe streepjes constant blijven branden zijn de batterijen opgeladen. Je kan dit nakijken met een multimeter, de volledig opgeladen spanning is 4,18V.
-![20231217_191814](https://github.com/Mouse703/Linefollower/assets/76005221/09fd5c1a-2c0e-4e07-a77b-8a387048093c)
-![20231210_170905](https://github.com/Mouse703/Linefollower/assets/76005221/feda0d32-787f-4392-ab9b-a30f92c13fbb)
+## Opladen / Vervangen Batterijen
+Het opladen van de batterijen gebeurt met de XTAR MC2 Plus lader. Plaats de batterijen in de houder met de juiste polariteit. Verbind de lader met je PC via een USB-kabel. Wanneer de 4 blauwe streepjes constant branden, zijn de batterijen opgeladen. Je kunt dit ook controleren met een multimeter; de volledig opgeladen spanning is 4,18V.
 
+## Draadloze Communicatie
+### Verbinding maken
+Verbinding met de robot gebeurt via Telnet over WiFi. In het `config.h` bestand dien je de SSID en het wachtwoord van je netwerk in te vullen. Dit kan zowel een thuisnetwerk als een hotspot zijn, maar het netwerk moet de 2.4GHz band ondersteunen, aangezien de ESP-32 van de robot alleen op 2.4GHz werkt.
 
-### Draadloze communicatie
-#### Verbinding maken
-Verbinding met de robot gebeurt met Telnet over WiFi. In het config.h bestand moet je de SSID en passwoord van uw netwerk invullen. Dit kan van een thuisnetwerk zijn of van een hotspot. Belangerijk is dat de band van het netwerk 2.4GHz ondersteunt. De ESP-32 van de robot werkt alleen maar op 2.4GHz
-Indien je met de robot met je PC wil verbinden hoef je geen extra software op je PC te installeren. Wel moet je een windows feature aanzetten, dit doe je door naar "Turn Windows features on or off" te gaan. Hier scroll je naar beneden tot je Telnet Client ziet staan, die vink je dan aan zodat de nodige features geinstalleerd worden. Eenmaal dit gedaan is kan je een command prompt openen, hier geef je het IP address in van de robot. Het IP address kan je vinden door naar je hotspot instellingen te gaan. Of je kan de robot verbinden met USB en een serieële monitor openen, daar krijg je ook te zien wat het IP address is van de robot.
+Als je de robot met je PC wilt verbinden, hoef je geen extra software te installeren. Wel moet je een Windows-functie inschakelen door naar "Turn Windows features on or off" te gaan. Hier vind je de Telnet Client, die je moet aanvinken zodat de benodigde functies worden geïnstalleerd. Na deze configuratie kun je een command prompt openen en het IP-adres van de robot invoeren, dat je kunt vinden in je hotspot-instellingen of via een USB-verbinding met de robot en het openen van een seriële monitor.
 
-#### commando's
-##### debug                   Toont alle instelbare parameters
-##### run (start/stop)        Start of stop de robot
-##### set cycle [µs]          Instellen cyclustijd van de ESP-32
-##### set power [0..255]      Instellen power van de motoren
-##### set diff [0..1]         Instellen als de robot moet vertragen in de bochten (0 niets, 1 heel veel)
-##### set kp [0..]            Instellen proportionele correctie van de fout (P-regeling)
-##### set ki [0..]            Instellen integrerende correctie van de fout (I-regeling)
-##### set kd [0..]            Instellen differentieële correctie van de fout (D-regeling)
-##### set ledon               Aanzetten van voor- en achterlichten
-##### set ledred [0..255]     Instellen van brightness rode lichten
-##### set ledorange [0..255]  Instellen van brightness oranje lichten
-##### set ledwhite [0..255]   Instellen van brightness witte lichten
-##### set ledstatus [0..255]  Instellen van brightness status lichten
-##### calibrate black         Calibreren van de zwartwaardes
-##### calibrate white         Calibreren van de witwaardes
+### Commando's
+- **debug**: Toont alle instelbare parameters
+- **run (start/stop)**: Start of stopt de robot
+- **set cycle [µs]**: Stelt de cyclustijd van de ESP-32 in
+- **set power [0..255]**: Stelt de kracht van de motoren in
+- **set diff [0..1]**: Stelt in of de robot moet vertragen in de bochten (0 niets, 1 veel)
+- **set kp [0..]**: Stelt de proportionele correctie van de fout in (P-regeling)
+- **set ki [0..]**: Stelt de integrerende correctie van de fout in (I-regeling)
+- **set kd [0..]**: Stelt de differentiële correctie van de fout in (D-regeling)
+- **set ledon**: Zet de voor- en achterlichten aan
+- **set ledred [0..255]**: Stelt de helderheid van de rode lichten in
+- **set ledorange [0..255]**: Stelt de helderheid van de oranje lichten in
+- **set ledwhite [0..255]**: Stelt de helderheid van de witte lichten in
+- **set ledstatus [0..255]**: Stelt de helderheid van de statuslichten in
+- **calibrate black**: Kalibreert de zwartwaarden
+- **calibrate white**: Kalibreert de witwaarden
 
-### Kalibratie
-We calibreren de zwartwaardes door de robot op een zwart oppervlak te plaatsen van het circuit, daarna voeren we het commando calibrate black in. Hierna calibreren we de witwaardes door onze robot op een wit oppervlak van het circuit te plaatsen en het commando calibrate wit in te voeren.
+## Kalibratie
+Kalibreer de zwartwaarden door de robot op een zwart oppervlak van het circuit te plaatsen en voer vervolgens het commando `calibrate black` in. Herhaal dit proces voor de witwaarden door de robot op een wit oppervlak van het circuit te plaatsen en het commando `calibrate white` in te voeren.
 
-### settings
-De robot rijdt stabiel met volgende parameters:
-#### Cycle time: 2500
-#### Power: 100
-#### Diff: 0.05
-#### Kp: 5
-#### Ki: 0
-#### Kd: 0.05
+## Instellingen
+De robot rijdt stabiel met de volgende parameters:
+- **Cycle time**: 2500
+- **Power**: 100
+- **Diff**: 0.05
+- **Kp**: 5
+- **Ki**: 0
+- **Kd**: 0.05
 
-
-### start/stop button
-De start/stop knop bevindt zich naast de blauwe status LED. Wanneer er op deze knop gedrukt wordt zal de robot de running state switchen, d.w.z. dat de robot zal beginnen rijden of stoppen aan de hand van in welke toestand hij bevindt. 
+## Start/Stop-knop
+De start/stop-knop bevindt zich naast de blauwe status-LED. Druk op deze knop om de running state van de robot te wijzigen, wat betekent dat de robot zal beginnen met rijden of stoppen, afhankelijk van de huidige toestand.
