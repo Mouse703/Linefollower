@@ -1,29 +1,29 @@
-# LineFollower
+# LineFollower Louis Van Roosmaelen
 
-lege repository die je als template kan gebruiken om een eigen repository te starten voor uw linefollower project
+![Plan A](images/20231218_101858.png)
 
-![A description of my image](images/empty.png)
+## Specifications
 
-  
-## specifications
+**Microcontroller:** ESP32-WROOM NodeMCU (CP2102)
 
-microcontroller: ESP32-WROOM NodeMCU CP2102
+**Motors:** 2x 6VDC Motors 50:1 micro metal gearbox
 
-motors: 2x 6VDC Motors 50:1 micro metal gearbox
+**H-Bridge:** DollaTek DRV8833
 
-h-bridge: DollaTek DRV8833
+**Sensors:** Pololu QTR-8A
 
-sensors: Pololu QTR-8A
+**Batteries:** 2x XTAR 18650 (2200mAh, 5A, protected)
 
-batteries: 2x XTAR 18650 (2200mAh, 5A, protected)
+**Wireless Communication:** Telnet communication over WiFi (with optional web server)
 
-wireless communication: Telnet communication over WiFi with web server
+**Distance Sensor - Motors:**
+- Plan A: 107.5mm
+- Plan B: 80mm
 
-distance sensor - motors: Plan A:
-                          Plan B: 80mm
+**Weight:**
+- Plan A: 249 grams
+- Plan B: 364 grams
 
-weight: Plan A: 
-Plan B: 364 gram
-
-speed:  Plan A: 0,462m/s
-        Plan B: 0,000m/s 
+**Speed:**
+- Plan A: 0.462m/s
+- Plan B: 0.600m/s
