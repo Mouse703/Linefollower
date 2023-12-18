@@ -10,21 +10,21 @@ Verbinding met de robot gebeurt via Telnet over WiFi. In het `config.h` bestand 
 Als je de robot met je PC wilt verbinden, hoef je geen extra software te installeren. Wel moet je een Windows-functie inschakelen door naar "Turn Windows features on or off" te gaan. Hier vind je de Telnet Client, die je moet aanvinken zodat de benodigde functies worden geïnstalleerd. Na deze configuratie kun je een command prompt openen en het IP-adres van de robot invoeren, dat je kunt vinden in je hotspot-instellingen of via een USB-verbinding met de robot en het openen van een seriële monitor.
 
 ### Commando's
-- **debug**: Toont alle instelbare parameters
-- **run (start/stop)**: Start of stopt de robot
-- **set cycle [µs]**: Stelt de cyclustijd van de ESP-32 in
-- **set power [0..255]**: Stelt de kracht van de motoren in
-- **set diff [0..1]**: Stelt in of de robot moet vertragen in de bochten (0 niets, 1 veel)
-- **set kp [0..]**: Stelt de proportionele correctie van de fout in (P-regeling)
-- **set ki [0..]**: Stelt de integrerende correctie van de fout in (I-regeling)
-- **set kd [0..]**: Stelt de differentiële correctie van de fout in (D-regeling)
-- **set ledon**: Zet de voor- en achterlichten aan
-- **set ledred [0..255]**: Stelt de helderheid van de rode lichten in
-- **set ledorange [0..255]**: Stelt de helderheid van de oranje lichten in
-- **set ledwhite [0..255]**: Stelt de helderheid van de witte lichten in
-- **set ledstatus [0..255]**: Stelt de helderheid van de statuslichten in
-- **calibrate black**: Kalibreert de zwartwaarden
-- **calibrate white**: Kalibreert de witwaarden
+- **debug** Toont alle instelbare parameters
+- **run (start/stop)** Start of stopt de robot
+- **set cycle [µs]** Stelt de cyclustijd van de ESP-32 in
+- **set power [0..255]** Stelt de kracht van de motoren in
+- **set diff [0..1]** Stelt in of de robot moet vertragen in de bochten (0 niets, 1 veel)
+- **set kp [0..]** Stelt de proportionele correctie van de fout in (P-regeling)
+- **set ki [0..]** Stelt de integrerende correctie van de fout in (I-regeling)
+- **set kd [0..]** Stelt de differentiële correctie van de fout in (D-regeling)
+- **set ledon** Zet de voor- en achterlichten aan
+- **set ledred [0..255]** Stelt de helderheid van de rode lichten in
+- **set ledorange [0..255]** Stelt de helderheid van de oranje lichten in
+- **set ledwhite [0..255]** Stelt de helderheid van de witte lichten in
+- **set ledstatus [0..255]** Stelt de helderheid van de statuslichten in
+- **calibrate black** Kalibreert de zwartwaarden
+- **calibrate white** Kalibreert de witwaarden
 
 ## Kalibratie
 Kalibreer de zwartwaarden door de robot op een zwart oppervlak van het circuit te plaatsen en voer vervolgens het commando `calibrate black` in. Herhaal dit proces voor de witwaarden door de robot op een wit oppervlak van het circuit te plaatsen en het commando `calibrate white` in te voeren.
@@ -36,7 +36,7 @@ De robot rijdt stabiel met de volgende parameters:
 - **Diff**: 0.05
 - **Kp**: 5
 - **Ki**: 0
-- **Kd**: 0.05
+- **Kd**: 0
 
 ## Start/Stop-knop
 De start/stop-knop bevindt zich naast de blauwe status-LED. Druk op deze knop om de running state van de robot te wijzigen, wat betekent dat de robot zal beginnen met rijden of stoppen, afhankelijk van de huidige toestand.
