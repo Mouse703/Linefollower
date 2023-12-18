@@ -1,6 +1,6 @@
 # LineFollower Louis Van Roosmaelen
 
-![Plan A](images/20231218_101858.png)
+![Plan A](images/20231218_101858.jpg)
 
 ## Specifications
 
