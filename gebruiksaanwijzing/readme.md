@@ -5,9 +5,23 @@ Het opladen van de batterijen gebeurt met de XTAR MC2 Plus lader. Plaats de batt
 
 ## Draadloze Communicatie
 ### Verbinding maken
-Verbinding met de robot gebeurt via Telnet over WiFi. In het `config.h` bestand dien je de SSID en het wachtwoord van je netwerk in te vullen. Dit kan zowel een thuisnetwerk als een hotspot zijn, maar het netwerk moet de 2.4GHz band ondersteunen, aangezien de ESP-32 van de robot alleen op 2.4GHz werkt.
+Verbinding met de robot gebeurt via Telnet over WiFi. In het `config.h` bestand dien je de SSID en het wachtwoord van je netwerk in te vullen, alsook kan je een hostname instellen voor je robot. Het WiFi netwerk kan zowel een thuisnetwerk als een hotspot zijn, maar het netwerk moet de 2.4GHz band ondersteunen. Dit komt omdat de ESP-32 van de robot alleen op 2.4GHz werkt. Ook moet je ervoor zorgen dat je op hetzelfde WiFi netwerk zit. Wanneer dit is ingevuld kan je de code uploaden naar de ESP-32 (zie handleiding).
 
-Als je de robot met je PC wilt verbinden, hoef je geen extra software te installeren. Wel moet je een Windows-functie inschakelen door naar "Turn Windows features on or off" te gaan. Hier vind je de Telnet Client, die je moet aanvinken zodat de benodigde functies worden geïnstalleerd. Na deze configuratie kun je een command prompt openen en het IP-adres van de robot invoeren, dat je kunt vinden in je hotspot-instellingen of via een USB-verbinding met de robot en het openen van een seriële monitor.
+Als je de robot met je PC wilt verbinden, hoef je geen extra software te installeren. Wel moet je een Windows-functie inschakelen door naar "Turn Windows features on or off" te gaan. Hier vind je de Telnet Client, die je moet aanvinken zodat de benodigde functies worden geïnstalleerd. 
+
+Het ip address kan je vinden in je hotspot-instellingen of door een USB-verbinding met de robot te maken en de seriële monitor te openen. Deze toont dan het IP adress / telnet poort waarmee de robot kan verbonden worden. 
+
+### 1: Powershell terminal (PC)
+1. Zet de hotspot aan of verbind met hetzelfde WiFi-netwerk waar de ESP-32 zich op bevindt.
+2. Open een powershell terminal met de toetsencombinatie `WIN` + `X` en selecteer Terminal.
+3. Voer het commando telnet in met uw IP of hostname gevolgd door de telnet poort (bvb `telnet 192.168.137.239 2121`)
+4. Nu wordt er automatisch een nieuwe window geopend en kan u commando's ingeven.
+
+### 2: Mobile Telnet (smartphone app)
+1. Zet de hotspot aan of verbind met hetzelfde WiFi-netwerk waar de ESP-32 zich op bevindt.
+2. Open de app en klik rechtsboven op de 3 puntjes
+3. Klik op telnet settings en voer het juiste IP address in met de bijhorende poort
+4. Klik op connect en nu kan u commando's ingeven.
 
 ### Commando's
 - **debug** Toont alle instelbare parameters
