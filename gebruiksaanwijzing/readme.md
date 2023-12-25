@@ -5,11 +5,11 @@ Het opladen van de batterijen gebeurt met de XTAR MC2 Plus lader. Plaats de batt
 
 ## Draadloze Communicatie
 ### Verbinding maken
-Verbinding met de robot gebeurt via Telnet over WiFi. In het `config.h` bestand dien je de SSID en het wachtwoord van je netwerk in te vullen, alsook kan je een hostname instellen voor je robot. Het WiFi netwerk kan zowel een thuisnetwerk als een hotspot zijn, maar het netwerk moet de 2.4GHz band ondersteunen. Dit komt omdat de ESP-32 van de robot alleen op 2.4GHz werkt. Ook moet je ervoor zorgen dat je op hetzelfde WiFi netwerk zit. Wanneer dit is ingevuld kan je de code uploaden naar de ESP-32 (zie handleiding).
+Verbinding met de robot gebeurt via Telnet over WiFi. In het `config.h` bestand dien je de SSID en het wachtwoord van je netwerk in te vullen, alsook kan je best een hostname instellen voor je robot. Het WiFi netwerk kan zowel een thuisnetwerk als een hotspot zijn, maar het netwerk moet de 2.4GHz band ondersteunen. Dit komt omdat de ESP-32 van de robot alleen op 2.4GHz werkt. Ook moet je ervoor zorgen dat je op hetzelfde WiFi netwerk zit. Wanneer dit is ingevuld kan je de code uploaden naar de ESP-32 (zie handleiding).
 
 Als je de robot met je PC wilt verbinden, hoef je geen extra software te installeren. Wel moet je een Windows-functie inschakelen door naar "Turn Windows features on or off" te gaan. Hier vind je de Telnet Client, die je moet aanvinken zodat de benodigde functies worden geïnstalleerd. 
 
-Het ip address kan je vinden in je hotspot-instellingen of door een USB-verbinding met de robot te maken en de seriële monitor te openen. Deze toont dan het IP adress / telnet poort waarmee de robot kan verbonden worden. 
+Het ip adres kan je vinden door met een powershell terminal of command prompt een ping command te sturen. Dit kan gedaan worden met `ping -4 robot` (met robot als gekozen hostname) Je kan ook het ip address vinden in je hotspot-instellingen of door een USB-verbinding met de robot te maken en de seriële monitor te openen. Deze toont dan het IP adress / telnet poort waarmee de robot kan verbonden worden.
 
 ### 1: Powershell terminal (PC)
 1. Zet de hotspot aan of verbind met hetzelfde WiFi-netwerk waar de ESP-32 zich op bevindt.
@@ -28,7 +28,7 @@ Het ip address kan je vinden in je hotspot-instellingen of door een USB-verbindi
 - **run (start/stop)** Start of stopt de robot
 - **set cycle [µs]** Stelt de cyclustijd van de ESP-32 in
 - **set power [0..255]** Stelt de kracht van de motoren in
-- **set diff [0..1]** Stelt in of de robot moet vertragen in de bochten (0 niets, 1 veel)
+- **set diff [0..1]** Stelt in hoe hard de robot moet bijsturen in de bochten (0 niets, 1 veel)
 - **set kp [0..]** Stelt de proportionele correctie van de fout in (P-regeling)
 - **set ki [0..]** Stelt de integrerende correctie van de fout in (I-regeling)
 - **set kd [0..]** Stelt de differentiële correctie van de fout in (D-regeling)
