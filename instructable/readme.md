@@ -90,6 +90,8 @@ Bevestig de QTR-8A sensor aan het chassis volgens de afbeelding. Hiervoor zijn 3
 ## Stap 10: Monteren van de Motoren
 Neem de twee DC-motoren en voorzie ze elk van twee kabels: een rode voor de positieve zijde (+) en een blauwe voor de negatieve zijde (-). Plaats vervolgens de motoren met de kabels eerst in de houder. Bevestig daarna de wielen op de motoren, deze worden vastgehouden door een overgangspassing. Verbind ten slotte de draden met de schroefterminal van de PCB. De positieve zijde (rode kabel) van de linkermotor wordt aangesloten op OUT1, terwijl de negatieve zijde (blauwe kabel) wordt verbonden met OUT2. De negatieve zijde (blauwe kabel) van de rechtermotor wordt verbonden met OUT3, terwijl de positieve zijde (rode kabel) wordt aangesloten op OUT4.
 
+![Alt Text](../images/20231227_230854.jpg)
+
 ## Stap 11: Monteren Batterijhouder en Spanningsverdeler
 Neem de volgende componenten erbij:
 - Batterijhouder
