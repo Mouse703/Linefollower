@@ -24,21 +24,21 @@ Het ip adres kan je vinden door met een powershell terminal of command prompt ee
 4. Klik op connect en nu kan u commando's ingeven.
 
 ### Commando's
-- **debug** Toont alle instelbare parameters
-- **run (start/stop)** Start of stopt de robot
-- **set cycle [µs]** Stelt de cyclustijd van de ESP-32 in
-- **set power [0..255]** Stelt de kracht van de motoren in
-- **set diff [0..1]** Stelt in hoe hard de robot moet bijsturen in de bochten (0 niets, 1 veel)
-- **set kp [0..]** Stelt de proportionele correctie van de fout in (P-regeling)
-- **set ki [0..]** Stelt de integrerende correctie van de fout in (I-regeling)
-- **set kd [0..]** Stelt de differentiële correctie van de fout in (D-regeling)
-- **set ledon** Zet de voor- en achterlichten aan
-- **set ledred [0..255]** Stelt de helderheid van de rode lichten in
-- **set ledorange [0..255]** Stelt de helderheid van de oranje lichten in
-- **set ledwhite [0..255]** Stelt de helderheid van de witte lichten in
-- **set ledstatus [0..255]** Stelt de helderheid van de statuslichten in
-- **calibrate black** Kalibreert de zwartwaarden
-- **calibrate white** Kalibreert de witwaarden
+- `debug` Toont alle instelbare parameters
+- `run (start/stop)` Start of stopt de robot
+- `set cycle [µs]` Stelt de cyclustijd van de ESP-32 in
+- `set power [0..255]` Stelt de kracht van de motoren in
+- `set diff [0..1]` Stelt in hoe hard de robot moet bijsturen in de bochten (0 niets, 1 veel)
+- `set kp [0..]` Stelt de proportionele correctie van de fout in (P-regeling)
+- `set ki [0..]` Stelt de integrerende correctie van de fout in (I-regeling)
+- `set kd [0..]` Stelt de differentiële correctie van de fout in (D-regeling)
+- `set ledon` Zet de voor- en achterlichten aan
+- `set ledred [0..255]` Stelt de helderheid van de rode lichten in
+- `set ledorange [0..255]` Stelt de helderheid van de oranje lichten in
+- `set ledwhite [0..255]` Stelt de helderheid van de witte lichten in
+- `set ledstatus [0..255]` Stelt de helderheid van de statuslichten in
+- `calibrate black` Kalibreert de zwartwaarden
+- `calibrate white` Kalibreert de witwaarden
 
 ## Kalibratie
 Kalibreer de zwartwaarden door de robot op een zwart oppervlak van het circuit te plaatsen en voer vervolgens het commando `calibrate black` in. Herhaal dit proces voor de witwaarden door de robot op een wit oppervlak van het circuit te plaatsen en het commando `calibrate white` in te voeren.
@@ -54,3 +54,10 @@ De robot rijdt stabiel met de volgende parameters:
 
 ## Start/Stop-knop
 De start/stop-knop bevindt zich naast de blauwe status-LED. Druk op deze knop om de running state van de robot te wijzigen, wat betekent dat de robot zal beginnen met rijden of stoppen, afhankelijk van de huidige toestand.
+
+## Status LED's
+Op de PCB bevinden zich status LED's. De brightness hiervan wordt ingesteld met `set ledstatus [0..255]`. De functie van deze LED's staan hieronder uitgelegd.
+- **Blauwe LED** Bij knipperen: er wordt poging gedaan om met WiFi te verbinden. Bij vast licht: er is verbinding met een WiFi client. Bij geen licht: de WiFi verbinding is verbroken, robot moet herstart worden indien er weer parameters moeten aangepast worden.
+- **Groene LED** Bij vast licht: de robot is klaar om te rijden maar in standby modus, er is een run command nodig of een druk op de startknop.
+- **Oranje LED** Bij vast licht: de robot is aan het rijden.
+- **Rode LED** Bij vast licht: de robot is buiten het parcour gegaan, er is een nieuwe run command nodig of een druk op de startknop.
