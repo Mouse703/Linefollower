@@ -141,6 +141,6 @@ Klik nu op upload dat je kan vinden in de balk linksonder, het ziet eruit als ee
 ![Alt Text](../images/Screenshot%202023-12-28%20203657.png)
 
 ## Stap 19: Robot starten
-Nu is alles klaar om de robot te starten. Verbreek de verbinding met de PC en haal de USB kabel eruit. Plaats de twee XTAR batterijen in de houder en zet de switch in de ON positie. Geef de stabiele waardes in die je kan vinden in de [manual.](../gebruiksaanwijzing/readme.md) Van hieruit kan je zelf spelen met de parameters. Veel succes!
+Nu is alles klaar om de robot te starten. Verbreek de verbinding met de PC en haal de USB kabel eruit. Plaats de twee XTAR batterijen in de houder en zet de switch in de ON positie. Geef de stabiele waardes in die je kan vinden in de [manual](../gebruiksaanwijzing/readme.md) en druk op de startknop. Van hieruit kan je zelf spelen met de parameters. Veel succes!
 
 ![Alt Text](../images/robot-gif.gif)
