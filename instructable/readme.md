@@ -12,13 +12,15 @@
 9. [Elektrische Montage QTR-8A](#stap-9-elektrische-montage-qtr-8a)
 10. [Monteren QTR-8A op Chassis en Verbinding met PCB](#stap-10-monteren-qtr-8a-op-chassis-en-verbinding-met-pcb)
 11. [Monteren van de Motoren](#stap-11-monteren-van-de-motoren)
-12. [Monteren Batterijhouder en Spanningsverdeler](#stap-12-monteren-batterijhouder-en-spanningsverdeler)
-13. [Installeren Visual Studio Code](#stap-13-installeren-visual-studio-code)
-14. [Installeren Platform.io](#stap-14-installeren-platformio)
-15. [Openen project](#stap-15-openen-project)
-16. [Installeren driver voor ESP32](#stap-16-installeren-driver-voor-esp32)
-17. [Parameters UserConfig.h](#stap-17-parameters-userconfigh)
-18. [Uploaden naar ESP32](#stap-18-uploaden-naar-esp32)
+12. 
+13. [Monteren Batterijhouder en Spanningsverdeler](#stap-12-monteren-batterijhouder-en-spanningsverdeler)
+14. [Installeren Visual Studio Code](#stap-13-installeren-visual-studio-code)
+15. [Installeren Platform.io](#stap-14-installeren-platformio)
+16. [Openen project](#stap-15-openen-project)
+17. [Installeren driver voor ESP32](#stap-16-installeren-driver-voor-esp32)
+18. [Parameters UserConfig.h](#stap-17-parameters-userconfigh)
+19. [Uploaden naar ESP32](#stap-18-uploaden-naar-esp32)
+20. 
 
 ---
 
@@ -140,7 +142,12 @@ Klik nu op upload dat je kan vinden in de balk linksonder, het ziet eruit als ee
 
 ![Alt Text](../images/Screenshot%202023-12-28%20203657.png)
 
-## Stap 19: Robot starten
-Nu is alles klaar om de robot te starten. Verbreek de verbinding met de PC en haal de USB kabel eruit. Plaats de twee XTAR batterijen in de houder en zet de switch in de ON positie. Geef de stabiele waardes in die je kan vinden in de [manual](../gebruiksaanwijzing/readme.md) en druk op de startknop. Van hieruit kan je zelf spelen met de parameters. Veel succes!
+## Stap 19: Batterijen plaatsen
+Nu is alles klaar om de robot zijn eigen voeding te geven. Verbreek de verbinding met de PC en haal de USB kabel eruit. Plaats de twee XTAR batterijen in de houder en zet de switch in de ON positie.
+
+![Alt Text](../images/20231228_230152.png)
+
+## Stap 20: Robot starten
+Maak verbinding met de robot en geef de stabiele waardes in. Meet uitleg hierover kan u vinden in de [manual.](../gebruiksaanwijzing/readme.md) Druk vervolgens op de startknop, vanaf nu kan je de waardes aanpassen om zoveel mogelijk snelheid te halen. Veel succes!
 
 ![Alt Text](../images/robot-gif.gif)
