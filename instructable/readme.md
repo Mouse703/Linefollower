@@ -145,7 +145,7 @@ Klik nu op upload dat je kan vinden in de balk linksonder, het ziet eruit als ee
 ## Stap 19: Batterijen plaatsen
 Nu is alles klaar om de robot zijn eigen voeding te geven. Verbreek de verbinding met de PC en haal de USB kabel eruit. Plaats de twee XTAR batterijen in de houder en zet de switch in de ON positie.
 
-![Alt Text](../images/20231228_230152.png)
+![Alt Text](../images/20231228_230152.jpg)
 
 ## Stap 20: Robot starten
 Maak verbinding met de robot en geef de stabiele waardes in. Meet uitleg hierover kan u vinden in de [manual.](../gebruiksaanwijzing/readme.md) Druk vervolgens op de startknop, vanaf nu kan je de waardes aanpassen om zoveel mogelijk snelheid te halen. Veel succes!
