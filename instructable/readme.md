@@ -1,4 +1,4 @@
-![image](https://github.com/Mouse703/Linefollower/assets/76005221/a80144f3-aae9-4b0d-bd14-62e879e2d31d)# Instructible
+# Instructible
 
 ## Inhoudsopgave
 1. [Bestellen van Componenten](#stap-1-bestellen-van-componenten)
@@ -107,19 +107,31 @@ Eerst gaan we de uiteinden van de batterijhouder voorzien van een draad met een 
 ## Stap 12: Installeren Visual Studio Code
 Om het correcte programma te uploaden naar onze ESP32 moeten we Visual Studio Code installeren. Dit kan heel simpel gedaan worden door een powershell terminal te openen en volgend commmando in te geven `winget install -e --id Microsoft.VisualStudioCode`
 
+![Alt Text](../images/Screenshot%2023-12-28%173943.png)
+
 ## Stap 12: Installeren Platform.io
 Nu moeten we een IDE installeren in Visual Studio zodat we gemakkelijk kunnen uploaden. Dit doen we door naar extensions te gaan in visual studio code, dan te zoeken naar PlatformIO IDE en deze te installeren.
 
+![Alt Text](../images/Screenshot%2023-12-28%174332.png)
+
+
 ## Stap 13: Openen project
-Om het project te openen in platform.io gaan we naar PIO Home -> Open -> Open Project. [Het project vind je hier (download de map Syntheseproject - Code)](./code/finaal/)  
+Om het project te openen in platform.io gaan we naar PIO Home -> Open -> Open Project. [Het project vind je hier (download de map Syntheseproject - Code)](../code/finaal/) 
+
+![Alt Text](../images/Screenshot%2023-12-28%184114.png)
 
 ## Stap 14: Installeren driver voor ESP32
 Verbind nu de ESP32 met de computer, OPGELET, indien de batterijen van de robot al in de houder zitten dan moeten die UIT staan, als dit niet gedaan wordt zal je 8,4V op de USB poort terugsturen wat permanente schade kan toebrengen. 
-De ESP32 zal nu nog niet herkend worden op de computer, eerst moeten we een driver installeren. [Deze driver (CP210x) je hier vinden.](./code/finaal/) Ga dan naar `apparaatbeheer` of `device manager` (te vinden in controlepaneel) op je computer. Bij `overige apparaten` of `other devices` zie je nu staan `CP2102 USB to UART Bridge Controller` met een warning sign. Rechtermuisklik op het apparaat en klik op update driver. Selecteer dan `Browse my computer for drivers` en ga naar de map waar je de CP210x driver hebt gedownload. Klik dan op next en dan op close wanneer alles geupdate is.
+De ESP32 zal nu nog niet herkend worden op de computer, eerst moeten we een driver installeren. [Deze driver (CP210x) je hier vinden.](../code/finaal/) Ga dan naar `apparaatbeheer` of `device manager` (te vinden in controlepaneel) op je computer. Bij `overige apparaten` of `other devices` zie je nu staan `CP2102 USB to UART Bridge Controller` met een warning sign. Rechtermuisklik op het apparaat en klik op update driver. Selecteer dan `Browse my computer for drivers` en ga naar de map waar je de CP210x driver hebt gedownload. Klik dan op next en dan op close wanneer alles geupdate is.
+
+![Alt Text](../images/Screenshot%2023-12-28%185546.png)
 
 ## Stap 15: Parameters UserConfig.h
 Ga nu terug naar Visual Studio. In de explorer van visualstudio klap je nu `src` open, daarin staan twee bestanden, `main.cpp` en `UserConfig.h`. Open `UserConfig.h` en stel uw eigen parameters in. `ssid` is de netwerknaam van uw netwerk, `pswd` is het passwoord van uw netwerk en `host` is om gemakkelijk uw device terug te vinden op uw netwerk.
 
+![Alt Text](../images/Screenshot%2023-12-28%204305.png)
+
 ## Stap 16: Uploaden naar ESP32
 Klik nu op upload dat je kan vinden in de balk linksonder, het ziet eruit als een pijltje. Wanneer dit succesvol gedaan is zie je in de terminal `SUCCES` in het groen verschijnen.
 
+![Alt Text](../images/Screenshot%2023-12-28%203657.png)
