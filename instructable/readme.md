@@ -139,3 +139,7 @@ Ga nu terug naar Visual Studio. In de explorer van visualstudio klap je nu `src`
 Klik nu op upload dat je kan vinden in de balk linksonder, het ziet eruit als een pijltje. Wanneer dit succesvol gedaan is zie je in de terminal `SUCCES` in het groen verschijnen.
 
 ![Alt Text](../images/Screenshot%202023-12-28%20203657.png)
+
+## Stap 19: Robot starten
+Nu is alles klaar om de robot te starten. Verbreek de verbinding met de PC en haal de USB kabel eruit. Plaats de twee XTAR batterijen in de houder en 
+![Alt Text](../images/robot-gif.gif)
