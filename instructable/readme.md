@@ -104,6 +104,7 @@ Neem de volgende componenten erbij:
 - 2x kabels vaste kern (0,8mm²)
 - Krimpkous
 - Spanningsverdeler (L7805CV)
+
 Eerst gaan we de uiteinden van de batterijhouder voorzien van een draad met een vaste kern. Dit maakt het gemakkelijker om ze te verbinden met de schroefterminal van de PCB. Soldeer de rode draad van de batterijhouder aan een draad met een vaste kern en plaats er een stukje krimpkous over. Verwarm de krimpkous en herhaal dit proces voor de andere draad van de batterijhouder. Plaats vervolgens de draden in de juiste polariteit (bruin/rood naar VIN en zwart/blauw naar GND) in de schroefterminal. Bevestig de batterijhouder met M3-bouten en moeren zoals weergegeven in de foto. Ten slotte bevestigen we de spanningsverdeler (L7805CV) aan de PCB. Zorg ervoor dat de zijde met de heat spreader naar boven wijst, omdat de polariteit correct moet zijn. Bij twijfel kun je altijd de datasheet en het elektrisch schema raadplegen.
 
 ![Alt Text](../images/20231226_235354.jpg)
