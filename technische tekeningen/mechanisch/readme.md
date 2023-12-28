@@ -2,7 +2,8 @@
 
 Dit is de verzameling mechanische tekeningen van het ontwerp, gemaakt met **Autodesk Inventor Professional 2024**. Hieronder vindt je ook de bronnen van alle geïmporteerde CAD modellen.
 
-![3D Model - Plan A](../../images/Screenshot%2023-12-28%152455.png)
+![3D Model - Plan A](../../images/Screenshot%202023-12-28%20152455.png)
+
 
 ## Source Imported CAD Files:
 
