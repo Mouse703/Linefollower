@@ -12,15 +12,15 @@
 9. [Elektrische Montage QTR-8A](#stap-9-elektrische-montage-qtr-8a)
 10. [Monteren QTR-8A op Chassis en Verbinding met PCB](#stap-10-monteren-qtr-8a-op-chassis-en-verbinding-met-pcb)
 11. [Monteren van de Motoren](#stap-11-monteren-van-de-motoren)
-12. 
-13. [Monteren Batterijhouder en Spanningsverdeler](#stap-12-monteren-batterijhouder-en-spanningsverdeler)
-14. [Installeren Visual Studio Code](#stap-13-installeren-visual-studio-code)
-15. [Installeren Platform.io](#stap-14-installeren-platformio)
-16. [Openen project](#stap-15-openen-project)
-17. [Installeren driver voor ESP32](#stap-16-installeren-driver-voor-esp32)
-18. [Parameters UserConfig.h](#stap-17-parameters-userconfigh)
-19. [Uploaden naar ESP32](#stap-18-uploaden-naar-esp32)
-20. 
+12. [Monteren Batterijhouder en Spanningsverdeler](#stap-12-monteren-batterijhouder-en-spanningsverdeler)
+13. [Installeren Visual Studio Code](#stap-13-installeren-visual-studio-code)
+14. [Installeren Platform.io](#stap-14-installeren-platformio)
+15. [Openen project](#stap-15-openen-project)
+16. [Installeren driver voor ESP32](#stap-16-installeren-driver-voor-esp32)
+17. [Parameters UserConfig.h](#stap-17-parameters-userconfigh)
+18. [Uploaden naar ESP32](#stap-18-uploaden-naar-esp32)
+19. [Batterijen plaatsen](#stap-19-batterijen-plaatsen)
+20. [Robot starten](#stap-20-robot-starten)
 
 ---
 
