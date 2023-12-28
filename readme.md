@@ -25,5 +25,7 @@
 - Plan B: 364 grams
 
 **Speed:**
-- Plan A: 0.462m/s
-- Plan B: 0.600m/s
+- Plan A: 0.716m/s
+- Plan B: 0.446m/s
+
+![Plan A](images/robot-gif.gif)
