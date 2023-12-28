@@ -1,0 +1,5 @@
+Adafruit DRV8833 DC-Stepper Motor Driver:
+https://github.com/adafruit/Fritzing-Library/blob/master/parts/Adafruit%20DRV8833%20DC-Stepper%20Motor%20Driver.fzpz
+
+MH-ET LIVE ESP32 DEVKIT 38 pins:
+https://github.com/Warlib1975/Fritzing-parts/blob/master/MH-ET%20LIVE%20ESP32%20DEVKIT%2038%20pins.fzpz
