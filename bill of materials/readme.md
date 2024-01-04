@@ -23,7 +23,7 @@
 |        18|    Tiny Tronics - PCB Component      |6 Pins header Female                                |Nieuw                   |0.18          |2     |0       |0.36     |
 |        19|    Tiny Tronics - PCB Component      |LED set 5mm - Groen - Rood - Geel - Blauw - Wit     |Nieuw                   |3.00          |1     |0       |3.00     |
 |        20|    Tiny Tronics - PCB Component      |10Ω-1MΩ Weerstanden Set                             |Nieuw                   |5.00          |1     |0       |5.00     |
-|        21|    Tiny Tronics - Shipping           |Shipping                                            |Nieuw                   |7.95          |1     |0       |7.95     |
+|        21|    Tiny Tronics - Shipping           |Shipping                                            |Nieuw                   |x             |1     |7.95    |7.95     |
 |        22|    Countersunck crosshead screw      |M3x12                                               |recup                   |x             |9     |x       |x        |
 |        23|    DIN 912                           |M2.5x18                                             |recup                   |x             |3     |x       |x        |
 |        24|    DIN 985                           |M2.5                                                |recup                   |x             |3     |x       |x        |
@@ -31,6 +31,6 @@
 |        26|    Pushbutton                        |Drukknop                                            |recup                   |x             |x     |x       |x        |
 
 
-Totaal zonder shipping: 132.36 
+Totaal zonder shipping: €73.69 
 
-Totaal met shipping: 198.7
+Totaal met shipping: €140.03
