@@ -28,6 +28,9 @@
 |        23|    DIN 912                           |M2.5x18                                             |recup                   |x             |3     |x       |x        |
 |        24|    DIN 985                           |M2.5                                                |recup                   |x             |3     |x       |x        |
 |        25|    Multi colour wires                |0,75mm copper core wires                            |recup                   |x             |x     |x       |x        |
-|        26|    Kroonklemmen                      |Kroonklem 1.5mm²                                    |recup                   |x             |x     |x       |x        |
+|        26|    Pushbutton                        |Drukknop                                            |recup                   |x             |x     |x       |x        |
+
+
 Totaal zonder shipping: 132.36 
+
 Totaal met shipping: 198.7
